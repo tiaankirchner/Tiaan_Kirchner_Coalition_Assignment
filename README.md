@@ -1,5 +1,15 @@
 # Tech.Care – Patient Dashboard
 
+The provided Coalition template
+
+![The provided Coalition template](/screenshots/Coalition_adobe_template.png?raw=true "Coalition provided template")
+
+This my recreation of the adobe XD template
+
+![This my recreation of the adobe XD template](/screenshots/Coalition_created_page.png?raw=true "My re-creation")
+
+Please note: No interactability was required
+
 ## Overview
 
 Tech.Care is a Flask-based web application that renders a patient health dashboard using data retrieved from an external API. The application displays patient information, diagnosis history, lab results, and a dynamic blood pressure chart.
