@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block main %}
+<div class="row px-1 mx-1 flex-grow-1 py-3">
+    <div class="col-3 d-flex">
+        {% include "components/patients.html" %}
+    </div>
+    <div class="col-6 d-flex flex-column gap-4">
+        {% include "components/diagnosis_history.html" %}
+        {% include "components/diagnostic_list.html" %}
+    </div>
+    <div class="col-3 d-flex flex-column gap-4">
+        {% include "components/patient_info.html" %}
+        {% include "components/lab_results.html" %}
+    </div>
+</div>
+<script>window.patient = {{ patient_json | safe }};</script>
+<script src="/static/js/blood_pressure.js"></script>
+{% endblock %}

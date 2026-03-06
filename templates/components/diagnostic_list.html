@@ -1,0 +1,21 @@
+<div class="card" style="flex: 1">
+    <div class="card-body d-flex flex-column">
+        <h4 class="mb-4" style="font-weight: 800;">Diagnostic List</h4>
+        <div class="w-100 flex-grow-1 overflow-y-auto position-relative" style="height: 200px;">
+            <table class="w-100">
+                <tr class="sticky-top">
+                    <th class="bg-light rounded-start-pill p-3">Problem/Diagnosis</th>
+                    <th class="bg-light p-3">Description</th>
+                    <th class="bg-light rounded-end-pill p-3">Status</th>
+                </tr>
+                {% for diagnosis in current_patient.diagnostic_list %}
+                    <tr>
+                        <td class="p-3">{{ diagnosis.name }}</td>
+                        <td class="p-3">{{ diagnosis.description }}</td>
+                        <td class="p-3">{{ diagnosis.status }}</td>
+                    </tr>
+                {% endfor %}
+            </table> 
+        </div>
+    </div>
+</div>

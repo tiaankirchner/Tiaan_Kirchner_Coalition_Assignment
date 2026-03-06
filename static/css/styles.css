@@ -1,0 +1,101 @@
+:root{
+    --color-primary: #01F0D0;
+    --color-primary-light: #D8FCF7;
+    --color-light: #F6F7F8;
+    --color-dark: #072635;
+    --color-lilac: #F4F0FE;
+    --color-baby-blue: #E0F3FA;
+    --color-peach: #FFE6E9;
+    --color-pink: #FFE6F1;
+
+    --color-systolic: #E66FD2;
+    --color-diastolic: #8C6FE6;
+}
+body{
+    background-color: var(--color-light);
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+}
+
+body * {
+    color: var(--color-dark);
+}
+
+.nav-link {
+    border-radius: 2em;
+    padding: 0.5em 1em !important;
+}
+
+.bg-primary {
+    background-color: var(--color-primary) !important;
+}
+
+.bg-primary-light {
+    background-color: var(--color-primary-light) !important;
+}
+
+.bg-lilac {
+    background-color: var(--color-lilac);
+}
+
+.bg-baby-blue {
+    background-color: var(--color-baby-blue);
+}
+
+.bg-peach {
+    background-color: var(--color-peach);
+}
+
+.bg-pink {
+    background-color: var(--color-pink);
+}
+
+.bg-light {
+    background-color: var(--color-light);
+}
+
+.text-dark {
+    color: var(--color-dark) !important;
+}
+
+.list-group-item {
+  border: none;
+}
+
+.card {
+  border: none;
+  border-radius: 1em;
+}
+
+.fake-hover {
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.08);
+    }
+}
+
+.tight-spacing {
+    letter-spacing: -0.5px;
+}
+
+.dot_systolic {
+  height: 14px;
+  width: 14px;
+  background-color: var(--color-systolic);
+  border-radius: 50%;
+  margin-right: 0.4rem;
+  display: inline-block;
+}
+
+.dot_diastolic {
+  height: 14px;
+  width: 14px;
+  background-color: var(--color-diastolic);
+  border-radius: 50%;
+  margin-right: 0.4rem;
+  display: inline-block;
+}

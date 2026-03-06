@@ -1,0 +1,28 @@
+<div class="card" style="flex: 1">
+    <div class="card-body px-0 d-flex flex-column">
+        <h4 class="px-3" style="font-weight: 800;">Patients</h4>
+        <ul class="list-group overflow-y-auto flex-grow-1" style="height: 0;">
+            {% for patient in patients %}
+            <li class="list-group-item d-flex align-items-center gap-3 py-3 ps-3 pe-4 fake-hover {% if patient.name == current_patient.name %}bg-primary-light{% endif %}">
+                <img
+                    src="{{ patient.profile_picture }}"
+                    class="rounded-circle"
+                    style="height: 3em; width: 3em;"
+                    alt="Profile picture of {{ patient.name }}"
+                >
+                <div>
+                    <div class="fw-bold">
+                        {{ patient.name }}
+                    </div>
+                    <div class="small opacity-50">
+                        {{ patient.gender }}, {{ patient.age }}
+                    </div>
+                </div>
+                <svg class="ms-auto" xmlns="http://www.w3.org/2000/svg" width="18" height="5" viewBox="0 0 18 5">
+                    <path id="more_horiz_FILL0_wght300_GRAD0_opsz24" d="M191.09-536.285a1.788,1.788,0,0,1-1.312-.546,1.788,1.788,0,0,1-.546-1.312,1.788,1.788,0,0,1,.546-1.312A1.788,1.788,0,0,1,191.09-540a1.788,1.788,0,0,1,1.312.546,1.788,1.788,0,0,1,.546,1.312,1.788,1.788,0,0,1-.546,1.312A1.788,1.788,0,0,1,191.09-536.285Zm7.143,0a1.788,1.788,0,0,1-1.312-.546,1.788,1.788,0,0,1-.546-1.312,1.788,1.788,0,0,1,.546-1.312,1.788,1.788,0,0,1,1.312-.546,1.788,1.788,0,0,1,1.312.546,1.788,1.788,0,0,1,.546,1.312,1.788,1.788,0,0,1-.546,1.312A1.788,1.788,0,0,1,198.233-536.285Zm7.143,0a1.788,1.788,0,0,1-1.312-.546,1.788,1.788,0,0,1-.546-1.312,1.788,1.788,0,0,1,.546-1.312,1.788,1.788,0,0,1,1.312-.546,1.788,1.788,0,0,1,1.312.546,1.788,1.788,0,0,1,.546,1.312,1.788,1.788,0,0,1-.546,1.312,1.788,1.788,0,0,1-1.312.546Z" transform="translate(-189.233 539.999)" fill="currentColor"/>
+                </svg>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
